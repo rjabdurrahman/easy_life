@@ -218,7 +218,6 @@ h4 > span:not(.nocolor):not(.badge),
 h5 > span:not(.nocolor):not(.badge),
 h6 > span:not(.nocolor):not(.badge) { color: #ff6200; }
 
-p,
 pre,
 ul,
 ol,
