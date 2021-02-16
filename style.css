@@ -124,6 +124,31 @@ dl, dt, dd, ol, ul, li {
 :focus { outline: none !important; }
 
 
+.appear {
+    opacity: 0;
+    animation: opacityOn 30s normal forwards;
+    animation-delay: 2s;
+}
+
+@keyframes opacityOn {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 /* ----------------------------------------------------------------
 	Typography
 -----------------------------------------------------------------*/
@@ -8773,13 +8798,12 @@ td.actions {
 	outline: none;
 	white-space: nowrap;
 	margin: 5px;
-	padding: 8px 22px;
-	font-size: 0.875rem;
+	padding: 16px 14px 16px 22px;
+	font-size: 1.2rem;
 	line-height: 24px;
 	background-color: #ff6200;
 	color: #FFF;
 	font-weight: 700;
-	text-transform: uppercase;
 	border: none;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -8791,7 +8815,7 @@ body:not(.device-touch) .button {
 }
 
 .button.button-dark {
-	background-color: #444;
+	background-color: #ff6200;
 }
 
 .button.button-light {
@@ -8801,7 +8825,7 @@ body:not(.device-touch) .button {
 }
 
 .button:hover {
-	background-color: #444;
+	background-color: #d95300;
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -8894,9 +8918,9 @@ body:not(.device-touch) .button {
 -----------------------------------------------------------------*/
 
 .button.button-border {
-	border: 2px solid #444;
+	border: 2px solid #ff6200;
 	background-color: transparent;
-	color: #333;
+	color: #ff6200;
 	font-weight: 700;
 	text-shadow: none;
 }
@@ -8921,7 +8945,7 @@ body:not(.device-touch) .button {
 
 .button.button-border.button-light:hover {
 	background-color: #FFF;
-	color: #333;
+	color: #ff6200;
 	text-shadow: none;
 }
 
